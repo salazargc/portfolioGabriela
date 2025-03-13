@@ -1,0 +1,267 @@
+:root {
+  --branding-color: #fdc337;
+  --secondary-color: #ffffff;
+  --heading-font-family: "Playfair Display", serif; 
+  --default-font-family: "Poppins", sans-serif;
+
+}
+
+body {
+  font-family: var(--default-font-family);
+  background-color: #f9faff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: black;
+  font-family: var(--heading-font-family);
+  font-weight: bold;
+}
+
+p {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 30px;
+}
+h1 {
+  font-size: 55px;
+  line-height: 1.5;
+}
+h2 {
+  font-size: 45px;
+  
+}
+h3 {
+  font-size: 35px;
+}
+
+
+
+.hero {
+  background: var(--secondary-color);
+  text-align: left;
+  display: flex;
+  padding: 80px 20px;
+  flex-wrap: nowrap;
+  background-image:url("/images/background.png");
+  background-size: cover; 
+}
+ .hero > div{
+  text-align: left;
+  margin: 40px;
+  width: 486px;
+  height: 408;
+ }
+
+span {
+  font-size: 20px;
+  color: var(--branding-color);
+  font-family: "Nunito", serif;
+  font-weight: bold;
+  line-height: 1.2;
+  bottom: 10px;
+}
+
+p{
+  line-height: 1.5;
+  font-size: 12px;
+}
+
+.bg-white {
+ border-radius: 24px;
+}
+.content-container {
+  padding: 160px 20px;
+}
+
+
+
+.hero h1{
+  
+  line-height: 1.2;
+  text-align: left;                                           
+   
+}
+.hero h2 {
+  font-family: var(--heading-font-family);
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 2;
+}
+
+ .container h1{
+  text-decoration-line: underline; 
+  text-decoration-color: var(--branding-color);
+  text-decoration-thickness: 4px;
+  text-underline-position: under;
+}
+
+/* Image Content */
+.image-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-content img {
+  width: 720px;
+  z-index: 2;
+  height: 526px;
+}
+
+
+.content-container {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.content h1 {
+  font-size: 64px;
+  line-height: 80px;
+}
+.content h2 {
+  font-size: 18px;
+  font-family: var(--default-font-family);
+}
+.content h3 {
+  font-size: 24px;
+  line-height: 1.5;
+  font-family: var(--default-font-family);
+}
+.content p {
+  font-size: 14px;
+}
+.content {
+  margin: 30px;
+}
+
+.btn-branding {
+  background: var(--branding-color);
+  border: 2px solid var(--branding-color);
+  border-radius: 8px;
+  color: black;
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 8px 24px; 
+}
+
+.btn-branding-outline {
+  color: black;
+  border: 2px solid black;
+  border-style: inset;
+  border-radius: 8px;
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 8px 24px;
+  
+}
+
+.bg-white{
+  border-radius: 24px;
+}
+
+
+
+.project-description {
+  padding: 120px 60px;
+}
+.logo {
+  max-height: 40px;
+}
+nav {
+     position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  margin-left: 15px;
+}
+nav a {
+  text-decoration: none;
+  color: #272142;
+  transition: all 100ms ease-in-out;
+}
+
+nav a:hover,
+nav li.active a {
+  color: var(--branding-color);
+}
+
+footer {
+  margin: 60px 0;
+}
+
+footer .contact-box {
+  background: var(--secondary-color);
+  padding: 30px 120px;
+  border-radius: 10px;
+}
+footer .contact-box p {
+  margin: 0;
+}
+footer .email-link {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+  text-align: center;
+}
+footer .email-link:hover {
+  color: var(--branding-color);
+}
+
+footer .social-links a {
+  margin: 0 20px;
+  color: var(--branding-color);
+  background: var(--secondary-color);
+  padding: 10px 14px;
+  font-size: 18px;
+  border-radius: 50%;
+  transform: all 150ms ease-in-out;
+}
+
+footer .social-links a:hover {
+  color: white;
+  background: var(--branding-color);
+}
+@media (max-width: 960px) {
+  h1 {
+    font-size: 44px;
+    line-height: 1.5;
+  }
+  h2 {
+    font-size: 44px;
+  }
+  h3 {
+    font-size: 26px;
+  }
+  .hero {
+    padding: 80px 20px;
+  }
+  .project-description {
+    padding: 0;
+    text-align: center;
+  }
+  .about-section {
+    text-align: center;
+    padding: 0;
+  }
+  footer .contact-box {
+    padding: 30px;
+  }
+}

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/portfolio.css" />
+    <script
+      src="https://kit.fontawesome.com/8e33b25239.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta
+      name="description"
+      content="Gabriela is a GIS Developer based in Canada."
+    />
+    <title>Gabriela's Portfolio</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="d-flex justify-content-between" >
+        <a href="#aboutMe" title="Homepage">
+          <li class="logo d-none d-md-block" >Gabriela Salazar</li>
+        </a>
+        <ul>
+          <li>
+            <a href="#projects" title="Gabriela's Work">Projects</a>
+          </li>
+          <li>
+            <a href="#contactMe" title="Contact Gabriela">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="hero" id="aboutMe">
+      <div class="intro" >
+        <span class="left"> 🌍 Geographic Information System Analyst</span>
+        <h1>Hello, my name is Gabriela Salazar</h1>
+        <p class="mt-4 mb-4 text-muted">
+          Enthusiastic GIS Analyst with a passion for WebGIS front-end development and remote sensing analysis, committed to transforming complex geospatial data into actionable insights that support informed decision-making 🚀
+        </p>
+
+        <a
+          href="https://linkedin.com/in/gabrielasalazarr"
+          class="btn btn-branding"
+          title="LinkedIn"
+          >LinkedIn</a
+        >
+      </div>
+    </div>
+    <div class="container">
+      <h1 class="text-center m-5" id="projects">Projects</h1>
+
+      <div class="row mb-5 bg-white shadow">
+        <div class="col-lg-6 d-none d-lg-block p-0">
+          <img
+            src="images/geminiWeather.gif"
+            class="img-fluid rounded-start-4"
+            alt=" Weather application preview"
+          />
+        </div>
+        <div class="col d-flex">
+          <div class="project-description">
+            <h2 class="mb-5">WebGIS Weather Application</h2>
+            <p class="mb-5 text-muted">
+              This weather app was developed using open-source web mapping
+              libraries like Leaflet.js, along with HTML, CSS, and Vanilla
+              JavaScript. It integrates the Gemini API and OpenWeatherMap API to
+              display real-time weather information and AI-generated weather
+              suggestions. The app retrieves data such as the current
+              temperature, wind speed, humidity, and weather forecasts for the
+              upcoming days in a selected city. Additionally, it provides
+              personalized suggestions, including recommended activities,
+              precautions, and advice based on weather conditions. When a city
+              name is entered, the app zooms in on its geographical location and
+              opens a popup displaying relevant weather insights. This app is
+              designed to be useful for travel planning, environmental
+              monitoring, and survey planning, among other applications.
+            </p>
+            <!-- <a href="/projects.html" class="btn btn-branding-outline">Learn more</a> -->
+          </div>
+        </div>
+      </div>
+      <div class="row mb-5 bg-white shadow">
+        <div class="col">
+          <div class="project-description">
+            <h2 class="mb-5">WebGIS Trails Management Application</h2>
+            <p class="mb-5 text-muted">
+              This application was built using the ArcGIS Maps SDK for
+              JavaScript as the mapping library, along with HTML, CSS, and
+              vanilla JavaScript. It provides users with information about trail
+              locations, including details on accessibility. Users can query
+              data for specific parks, view trail usage statistics displayed in
+              a chart, bookmark areas of interest, and print the information.
+            </p>
+            <!-- <a href="/projects.html" class="btn btn-branding-outline">Learn more</a> -->
+          </div>
+        </div>
+        <div class="col d-none d-lg-block p-0">
+          <img
+            src="images/arcGISSDK.gif"
+            class="img-fluid rounded-end-4"
+            alt=" Trails application preview"
+          />
+        </div>
+      </div>
+
+      <div class="row mb-5 bg-white shadow">
+        <div class="col d-none d-lg-block p-0">
+          <img
+            src="images/co2emissions.gif"
+            class="img-fluid rounded-start-4"
+            alt=" Weather application preview"
+          />
+        </div>
+        <div class="col">
+          <div class="project-description">
+            <h2 class="mb-5">WebGIS CO2 Emissions Application</h2>
+            <p class="mb-5 text-muted">
+              This web mapping application was built using Leaflet.js and
+              Chart.js, along with HTML, CSS, and Vanilla JavaScript, to
+              visualize CO₂ emissions across different countries in 2023. The
+              dataset was sourced from Kaggle, then cleaned and processed using
+              Python. In the map, the size of the circles represents the amount
+              of CO₂ emissions in tons—larger circles indicate higher emissions,
+              while smaller circles represent lower emissions. Additionally, the
+              chart displays the total CO₂ emissions from six continents..
+            </p>
+            <!-- <a href="/projects.html" class="btn btn-branding-outline">Learn more</a> -->
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div
+          class="contact-box d-flex justify-content-between mb-5 d-none d-md-flex"
+        >
+          <div>
+            <h3 id="contactMe">Work Inquiry</h3>
+            <p class="text-muted">Let's work together</p>
+          </div>
+          <div>
+            <a
+              href="mailto:gabriela@engserpro.ca"
+              class="btn btn-branding"
+              title="Email Gabriela"
+              >Contact me</a
+            >
+          </div>
+        </div>
+        <div class="d-flex justify-content-center mb-5">
+          <a href="mailto:gabriela@engserpro.ca" class="email-link"></a>
+        </div>
+        <div class="social-links d-flex justify-content-center mb-5">
+          <a
+            href=" http://linkedin.com/in/gabrielasalazarr"
+            target="_blank"
+            title="LinkedIn Profile"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+
+          <a
+            href=" https://www.github.com/salazargc"
+            target="_blank"
+            title="GitHub Profile"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <p class="text-center mt-5">This portfolio was coded by Gabriela</p>
+      </footer>
+    </div>
+  </body>
+</html>
